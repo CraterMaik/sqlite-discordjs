@@ -6,7 +6,7 @@ const db = new sqlite3.Database("./mybotdata.sqlite"); //nombre de nuestra bd
 client.on("ready", () => {
 	console.log("Estoy listo!");
 
-	//<-- CREATE TABLE USUARIO -->
+//<-- CREATE TABLE USUARIO -->
  let crear = "CREATE TABLE IF NOT EXISTS usuarios (idusuario TEXT, nivel INTEGER, exp INTEGER)";
 
  db.run(crear, function (err) {
